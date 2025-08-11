@@ -1,0 +1,5 @@
+# Ignoruj środowisko wirtualne
+virte/
+
+# Ignoruj pliki pythona
+__pycache__/
