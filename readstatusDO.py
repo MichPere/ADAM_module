@@ -7,10 +7,10 @@ client.connect()
 # 0x0033 = 51 decimal
 address = 33
 
-result = client.read_coils(address=address, count=1, device_id=1)
+result = client.read_coils(address=address, count=11, device_id=1)
 if result.isError():
     print("Błąd odczytu")
 else:
-    print("DO status:", result.bits[0])
+    print("DO status:", result.bits)
 
 client.close()
