@@ -1,0 +1,33 @@
+IP_ADDRESS: '10.0.0.2'
+PORT: 502 
+
+#DI_Port : Address
+DI:
+  DI0: 0
+  DI1: 1
+  DI2: 2
+  DI3: 3
+  DI4: 4
+  DI5: 5
+  DI6: 6
+  DI7: 7
+  DI8: 8
+  DI9: 9
+  DI10: 10
+
+DO:
+  DO0: 32
+  DO1: 33
+  DO2: 34
+  DO3: 35
+  DO4: 36
+  DO5: 37
+  DO6: 38
+  DO7: 39
+  DO8: 40
+  DO9: 41
+  DO10: 42
+
+
+
+
