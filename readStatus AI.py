@@ -1,7 +1,7 @@
 from pymodbus.client import ModbusTcpClient
 import time
 
-client = ModbusTcpClient("10.0.0.1", port=502)
+client = ModbusTcpClient("10.0.0.2", port=502)
 
 if client.connect():
     while True:
@@ -10,7 +10,8 @@ if client.connect():
         resu=[]
         if not result.isError():
             for i in range(len(result.registers)):
-                resu.append((result.registers[i]/65535)*(110-50))
+                resu.append(((result.registers[i]/65535*110)-50))
+                #resu.append(result.registers[i])
 
             print("Odczytane AI:", resu)
         else:
