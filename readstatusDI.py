@@ -1,7 +1,7 @@
 from pymodbus.client import ModbusTcpClient
 
 # Połączenie z ADAM
-client = ModbusTcpClient('10.0.0.2', port=502)
+client = ModbusTcpClient('10.0.0.1', port=502)
 client.connect()
 count=11
 
