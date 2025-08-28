@@ -21,7 +21,7 @@ class Adam6317:
     def getConfFromYaml(self):
         try:
             with open('confAddresses.yaml','r',encoding='utf-8') as foo:
-                self.config=yaml.safe_load(foo)
+                self.config=yaml.safe_load(foo) 
         except Exception as e:
             print(f'Read file Error or do not found file: {e}')
         
